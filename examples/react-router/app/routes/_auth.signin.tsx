@@ -1,16 +1,15 @@
 import { Button, Flex, Heading } from "@radix-ui/themes";
-import { json } from "@remix-run/node";
-import type { LoaderFunctionArgs } from "@remix-run/node";
-import { Form, Link, useLoaderData } from "@remix-run/react";
-import { getSignInUrl } from "@workos-inc/authkit-remix";
-import { authkitLoader } from "@workos-inc/authkit-remix";
+import type { LoaderFunctionArgs } from "react-router";
+import { Form, Link, useLoaderData } from "react-router";
+import { getSignInUrl } from "@workos-inc/authkit-react-router";
+import { authkitLoader } from "@workos-inc/authkit-react-router";
 
 export async function loader(args: LoaderFunctionArgs) {
   return await authkitLoader(args, async ({ auth }) => {
-    return json({
+    return {
       signInUrl: await getSignInUrl(),
       accessToken: auth.accessToken,
-    });
+    };
   });
 }
 

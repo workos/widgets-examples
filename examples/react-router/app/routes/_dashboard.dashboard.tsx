@@ -1,5 +1,5 @@
 import { Flex, Heading, Separator, Text } from "@radix-ui/themes";
-import type { MetaFunction } from "@remix-run/node";
+import type { MetaFunction } from "react-router";
 
 export const meta: MetaFunction = () => {
   return [{ title: "SuperApp | Dashboard" }];

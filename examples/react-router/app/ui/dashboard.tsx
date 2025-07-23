@@ -1,5 +1,5 @@
 import { Flex, Text } from "@radix-ui/themes";
-import { NavLink, type NavLinkProps } from "@remix-run/react";
+import { NavLink, type NavLinkProps } from "react-router";
 import styles from "./dashboard.module.css";
 
 export function PrimaryNav({ children }: { children: React.ReactNode }) {
@@ -22,6 +22,7 @@ export function PrimaryNavItem({
   return (
     <Text weight="bold" color="gray" highContrast asChild>
       <NavLink to={to} className={styles.navItem}>
+        {/* @ts-expect-error */}
         {children}
       </NavLink>
     </Text>

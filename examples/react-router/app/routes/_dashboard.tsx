@@ -11,7 +11,7 @@ import {
   Text,
   VisuallyHidden,
 } from "@radix-ui/themes";
-import { Form, Outlet, useNavigation } from "@remix-run/react";
+import { Form, Outlet, useNavigation } from "react-router";
 import { PrimaryNav, PrimaryNavItem } from "~/ui/dashboard";
 import { SuperAppMark } from "~/ui/svgs";
 
