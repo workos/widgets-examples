@@ -4,4 +4,4 @@ This repository contains example applications demonstrating how to integrate Wor
 
 1. Next.js (`/examples/nextjs`)
 2. React with Vite (`/examples/react`)
-3. Remix (`/examples/remix`)
+3. React Router (`/examples/react-router`)

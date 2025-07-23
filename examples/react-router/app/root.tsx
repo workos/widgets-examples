@@ -5,7 +5,7 @@ import {
   Links,
   Meta,
   Outlet,
-  Link as RemixLink,
+  Link as RouterLink,
   Scripts,
   ScrollRestoration,
   isRouteErrorResponse,
@@ -101,7 +101,7 @@ export function ErrorBoundary() {
         </Text>
         <Text asChild align="center">
           <Link size="4" asChild>
-            <RemixLink to="/">Go back home</RemixLink>
+            <RouterLink to="/">Go back home</RouterLink>
           </Link>
         </Text>
       </Flex>
