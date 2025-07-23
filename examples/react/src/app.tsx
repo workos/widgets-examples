@@ -11,7 +11,6 @@ import { AuthKitProvider, useAuth } from "@workos-inc/authkit-react";
 import { UsersManagement, WorkOsWidgets } from "@workos-inc/widgets";
 import { OrganizationSwitcher } from "@workos-inc/widgets/organization-switcher";
 import { getApiProps, getDevtools } from "./env";
-import "./app.css";
 
 function AppWithProviders() {
   return (
