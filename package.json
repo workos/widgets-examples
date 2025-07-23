@@ -1,0 +1,12 @@
+{
+  "name": "widgets-examples",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "pnpm --filter \"./examples/**\" run dev"
+  },
+  "devDependencies": {
+    "typescript": "^5.6.2"
+  },
+  "packageManager": "pnpm@10.13.1"
+}
