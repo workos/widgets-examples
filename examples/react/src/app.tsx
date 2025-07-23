@@ -5,51 +5,51 @@ import {
   DropdownMenu,
   Flex,
   Heading,
-} from '@radix-ui/themes'
-import { ReactQueryDevtools } from '@tanstack/react-query-devtools'
-import { AuthKitProvider, useAuth } from '@workos-inc/authkit-react'
-import { UsersManagement, WorkOsWidgets } from '@workos-inc/widgets'
-import { OrganizationSwitcher } from '@workos-inc/widgets/organization-switcher'
-import { getApiProps, getDevtools } from './env'
-import './App.css'
+} from "@radix-ui/themes";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+import { AuthKitProvider, useAuth } from "@workos-inc/authkit-react";
+import { UsersManagement, WorkOsWidgets } from "@workos-inc/widgets";
+import { OrganizationSwitcher } from "@workos-inc/widgets/organization-switcher";
+import { getApiProps, getDevtools } from "./env";
+import "./app.css";
 
-function Root() {
+function AppWithProviders() {
   return (
     <AuthKitProvider {...getApiProps()}>
       <WorkOsWidgets {...getApiProps()}>
         <App />
       </WorkOsWidgets>
     </AuthKitProvider>
-  )
+  );
 }
 
 const AuthButton = () => {
-  const { user, signOut, signIn } = useAuth()
+  const { user, signOut, signIn } = useAuth();
   if (user) {
     return (
       <Button onClick={() => signOut()} size="3">
         Sign Out
       </Button>
-    )
+    );
   }
 
   return (
     <Button onClick={() => signIn()} size="3">
       Sign In
     </Button>
-  )
-}
+  );
+};
 
 function App() {
   const { user, getAccessToken, isLoading, signOut, switchToOrganization } =
-    useAuth()
+    useAuth();
 
   if (isLoading) {
     return (
       <Flex justify="center" align="center" height="100%">
         Authenticating...
       </Flex>
-    )
+    );
   }
 
   if (!user) {
@@ -64,7 +64,7 @@ function App() {
         <Heading size="6">Welcome!</Heading>
         <AuthButton />
       </Flex>
-    )
+    );
   }
 
   return (
@@ -75,7 +75,7 @@ function App() {
             gap="5"
             p="4"
             align="center"
-            style={{ borderBottom: '1px solid var(--gray-a7)' }}
+            style={{ borderBottom: "1px solid var(--gray-a7)" }}
           >
             <Button onClick={() => signOut()} radius="medium" variant="ghost">
               Sign Out
@@ -101,7 +101,7 @@ function App() {
         {getDevtools() && <ReactQueryDevtools />}
       </Box>
     </Flex>
-  )
+  );
 }
 
-export default Root
+export { AppWithProviders as App };
