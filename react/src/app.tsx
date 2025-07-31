@@ -1,3 +1,4 @@
+import { BrowserRouter } from "react-router";
 import {
   Box,
   Button,
@@ -14,11 +15,13 @@ import { getApiProps, getDevtools } from "./env";
 
 function AppWithProviders() {
   return (
-    <AuthKitProvider {...getApiProps()}>
-      <WorkOsWidgets {...getApiProps()}>
-        <App />
-      </WorkOsWidgets>
-    </AuthKitProvider>
+    <BrowserRouter>
+      <AuthKitProvider {...getApiProps()}>
+        <WorkOsWidgets {...getApiProps()}>
+          <App />
+        </WorkOsWidgets>
+      </AuthKitProvider>
+    </BrowserRouter>
   );
 }
 
