@@ -12,6 +12,7 @@ import {
   useRouteError,
 } from "react-router";
 import * as React from "react";
+import rootStylesheet from "./root.css?url";
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -25,6 +26,7 @@ export const links: LinksFunction = () => [
     href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
   },
   { rel: "stylesheet", href: radixThemesStylesheet },
+  { rel: "stylesheet", href: rootStylesheet },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
