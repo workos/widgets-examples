@@ -22,9 +22,24 @@ export function PrimaryNavItem({
   return (
     <Text weight="bold" color="gray" highContrast asChild>
       <NavLink to={to} className={styles.navItem}>
-        {/* @ts-expect-error */}
         {children}
       </NavLink>
+    </Text>
+  );
+}
+
+export function PrimaryNavButton({
+  onClick,
+  children,
+}: {
+  onClick: () => void;
+  children: React.ReactNode;
+}) {
+  return (
+    <Text weight="bold" color="gray" highContrast asChild>
+      <button type="button" onClick={onClick} className={styles.navItem}>
+        {children}
+      </button>
     </Text>
   );
 }

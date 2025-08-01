@@ -23,7 +23,10 @@
     "types": ["vite/client", "./global.d.ts"],
     "jsx": "react-jsx",
     "target": "ES2022",
-    "baseUrl": "."
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["src/*"]
+    }
   },
   "include": ["**/*"]
 }

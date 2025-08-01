@@ -11,9 +11,10 @@ import {
   Text,
   VisuallyHidden,
 } from "@radix-ui/themes";
-import { Form, Outlet, useNavigation } from "react-router";
-import { PrimaryNav, PrimaryNavItem } from "~/ui/dashboard";
-import { SuperAppMark } from "~/ui/svgs";
+import { useAuth } from "@workos-inc/authkit-react";
+import { Outlet, useNavigation } from "react-router";
+import { PrimaryNav, PrimaryNavItem } from "src/ui/dashboard";
+import { SuperAppMark } from "src/ui/svgs";
 
 export default function DashboardLayout() {
   const navigation = useNavigation();
@@ -88,6 +89,7 @@ export default function DashboardLayout() {
 }
 
 function AppMenu({ children }: { children: React.ReactNode }) {
+  const auth = useAuth();
   return (
     <DropdownMenu.Root>
       <DropdownMenu.Trigger>{children}</DropdownMenu.Trigger>
@@ -96,14 +98,11 @@ function AppMenu({ children }: { children: React.ReactNode }) {
         <DropdownMenu.Item shortcut="⌘ P">Preferences</DropdownMenu.Item>
         <DropdownMenu.Separator />
         <DropdownMenu.Item shortcut="⌥ ⇧ Q" asChild>
-          <button type="submit" form="signout-form">
+          <button type="button" onClick={() => void auth.signOut()}>
             Sign out
           </button>
         </DropdownMenu.Item>
       </DropdownMenu.Content>
-      <VisuallyHidden asChild>
-        <Form id="signout-form" method="post" action="/signout" />
-      </VisuallyHidden>
     </DropdownMenu.Root>
   );
 }
