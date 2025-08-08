@@ -15,7 +15,7 @@
     "@react-router/serve": "^7.7.0",
     "@tanstack/react-query": "^5.83.0",
     "@tanstack/react-query-devtools": "^5.83.0",
-    "@workos-inc/authkit-react-router": "^0.6.1",
+    "@workos-inc/authkit-react-router": "^0.7.0",
     "@workos-inc/node": "^7.61.0",
     "@workos-inc/widgets": "^1.2.1",
     "isbot": "^5.1.28",
