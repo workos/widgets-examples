@@ -8,6 +8,9 @@ importers:
 
   .:
     devDependencies:
+      prettier:
+        specifier: ^3.6.2
+        version: 3.6.2
       typescript:
         specifier: ^5.8.3
         version: 5.8.3
@@ -2411,6 +2414,11 @@ packages:
   prettier@2.8.8:
     resolution: {integrity: sha512-tdN8qQGvNjw4CHbY+XXk0JgCXn9QiF21a55rBe5LJAU+kDyC4WQn4+awm2Xfk2lQMk5fKup9XgzTZtGkjBdP9Q==}
     engines: {node: '>=10.13.0'}
+    hasBin: true
+
+  prettier@3.6.2:
+    resolution: {integrity: sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ==}
+    engines: {node: '>=14'}
     hasBin: true
 
   proc-log@3.0.0:
@@ -5130,6 +5138,8 @@ snapshots:
       source-map-js: 1.2.1
 
   prettier@2.8.8: {}
+
+  prettier@3.6.2: {}
 
   proc-log@3.0.0: {}
 

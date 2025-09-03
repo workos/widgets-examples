@@ -1,0 +1,8 @@
+*.yml
+*.yaml
+node_modules/
+
+nextjs/.next
+react-router/build
+react-router/.react-router
+react/dist
