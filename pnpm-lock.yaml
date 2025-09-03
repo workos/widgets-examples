@@ -143,8 +143,8 @@ importers:
         specifier: ^5.83.0
         version: 5.83.0(@tanstack/react-query@5.83.0(react@19.1.0))(react@19.1.0)
       '@workos-inc/authkit-react-router':
-        specifier: ^0.6.1
-        version: 0.6.1(express@4.21.2)(next@15.4.3(@babel/core@7.28.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react-router@7.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
+        specifier: ^0.7.0
+        version: 0.7.0(express@4.21.2)(next@15.4.3(@babel/core@7.28.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react-router@7.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)
       '@workos-inc/node':
         specifier: ^7.61.0
         version: 7.61.0(express@4.21.2)(next@15.4.3(@babel/core@7.28.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
@@ -1719,8 +1719,8 @@ packages:
       react: ^18.0 || ^19.0.0
       react-dom: ^18.0 || ^19.0.0
 
-  '@workos-inc/authkit-react-router@0.6.1':
-    resolution: {integrity: sha512-Jf5AZFctkBEraFLe4okPzrrI8prOcLcpRZWqtQckrNIur5omThiYgqqVMrx+bFB7XaqkI1JLzmuyAAGJylsJ5w==}
+  '@workos-inc/authkit-react-router@0.7.0':
+    resolution: {integrity: sha512-r4uWP8j1SwIea5Y4Z/MpuA1B0ZZSul89flQYZ9lRS2AQpQDNPlUcGvLMp8MuKkzAoE1Y1DK04C0x13ye4ffiaQ==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       react: ^18.0 || ^19.0.0
@@ -4438,7 +4438,7 @@ snapshots:
       - express
       - koa
 
-  '@workos-inc/authkit-react-router@0.6.1(express@4.21.2)(next@15.4.3(@babel/core@7.28.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react-router@7.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)':
+  '@workos-inc/authkit-react-router@0.7.0(express@4.21.2)(next@15.4.3(@babel/core@7.28.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react-dom@19.1.0(react@19.1.0))(react-router@7.7.0(react-dom@19.1.0(react@19.1.0))(react@19.1.0))(react@19.1.0)':
     dependencies:
       '@workos-inc/node': 7.61.0(express@4.21.2)(next@15.4.3(@babel/core@7.28.0)(react-dom@19.1.0(react@19.1.0))(react@19.1.0))
       iron-session: 8.0.4
