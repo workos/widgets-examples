@@ -1,9 +1,9 @@
-import { Button, Flex, Heading } from '@radix-ui/themes'
-import { getSignInUrl, signOut, withAuth } from '@workos-inc/authkit-nextjs'
-import NextLink from 'next/link'
+import { Button, Flex, Heading } from "@radix-ui/themes";
+import { getSignInUrl, signOut, withAuth } from "@workos-inc/authkit-nextjs";
+import NextLink from "next/link";
 
 export default async function HomePage() {
-  const { user } = await withAuth()
+  const { user } = await withAuth();
   return (
     <Flex
       direction="column"
@@ -34,31 +34,31 @@ export default async function HomePage() {
         </>
       )}
     </Flex>
-  )
+  );
 }
 
 async function AuthButton() {
-  const { user } = await withAuth()
-  const authorizationUrl = await getSignInUrl()
+  const { user } = await withAuth();
+  const authorizationUrl = await getSignInUrl();
   if (user) {
     return (
       <form
-        style={{ display: 'contents' }}
+        style={{ display: "contents" }}
         action={async () => {
-          'use server'
-          await signOut()
+          "use server";
+          await signOut();
         }}
       >
         <Button type="submit" size="3">
           Sign Out
         </Button>
       </form>
-    )
+    );
   }
 
   return (
     <Button asChild size="3">
       <a href={authorizationUrl}>Sign In</a>
     </Button>
-  )
+  );
 }

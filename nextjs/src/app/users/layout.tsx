@@ -1,17 +1,17 @@
-import { Box, Button, Flex } from '@radix-ui/themes'
-import { signOut, withAuth } from '@workos-inc/authkit-nextjs'
-import type { Metadata } from 'next'
+import { Box, Button, Flex } from "@radix-ui/themes";
+import { signOut, withAuth } from "@workos-inc/authkit-nextjs";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: 'WorkOS Widgets Next.js | User Management',
-}
+  title: "WorkOS Widgets Next.js | User Management",
+};
 
 export default async function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode
+  children: React.ReactNode;
 }>) {
-  await withAuth({ ensureSignedIn: true })
+  await withAuth({ ensureSignedIn: true });
   return (
     <Flex direction="column" height="100%">
       <Box flexGrow="0" flexShrink="0" flexBasis="auto">
@@ -19,13 +19,13 @@ export default async function RootLayout({
           gap="5"
           p="4"
           align="center"
-          style={{ borderBottom: '1px solid var(--gray-a7)' }}
+          style={{ borderBottom: "1px solid var(--gray-a7)" }}
         >
           <form
-            style={{ display: 'contents' }}
+            style={{ display: "contents" }}
             action={async () => {
-              'use server'
-              await signOut()
+              "use server";
+              await signOut();
             }}
           >
             <Button type="submit" radius="medium" variant="ghost">
@@ -38,5 +38,5 @@ export default async function RootLayout({
         {children}
       </Box>
     </Flex>
-  )
+  );
 }

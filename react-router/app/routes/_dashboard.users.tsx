@@ -23,7 +23,7 @@ export async function loader(args: LoaderFunctionArgs) {
       });
       return { apiProps, authToken, user };
     },
-    { ensureSignedIn: true }
+    { ensureSignedIn: true },
   );
 }
 
