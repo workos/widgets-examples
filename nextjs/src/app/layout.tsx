@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en" style={{ height: "100%" }}>
       <body style={{ margin: 0, height: "100%" }}>
         <AuthKitProvider>
-          <WorkOsWidgets {...getApiProps()}>
+          <WorkOsWidgets {...getApiProps()} style={{ height: "100%" }}>
             <Theme data-is-root-theme="false" style={{ height: "100%" }}>
               <Impersonation />
               {children}
