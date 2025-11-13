@@ -1,7 +1,7 @@
 import { UsersManagement, UsersManagementLoading } from "@workos-inc/widgets";
 import { Button, Flex, Heading, Separator, Text } from "@radix-ui/themes";
 import { Navigate } from "react-router";
-import { useAuth } from "src/lib/use-auth";
+import { useAuth } from "~/lib/use-auth";
 
 export default function Users() {
   const auth = useAuth();
@@ -10,7 +10,7 @@ export default function Users() {
     return (
       <>
         <title>SuperApp | Users</title>
-        <Layout subtitle="Manage and invite users for the SuperApp team">
+        <Layout subtitle="Manage and invite users for the SuperApp team.">
           <UsersManagementLoading />
         </Layout>
       </>
@@ -25,7 +25,7 @@ export default function Users() {
     return (
       <>
         <title>SuperApp | No organization</title>
-        <Layout subtitle="User does not belong to an organization">
+        <Layout subtitle="User does not belong to an organization.">
           <Button type="button" onClick={() => void auth.signOut()}>
             Sign out
           </Button>
@@ -37,8 +37,12 @@ export default function Users() {
   return (
     <>
       <title>SuperApp | Users</title>
-      <Layout subtitle="Manage and invite users for the SuperApp team">
-        <UsersManagement authToken={auth.authToken} />
+      <Layout subtitle="Manage and invite users for the SuperApp team.">
+        {auth.authToken ? (
+          <UsersManagement authToken={auth.authToken} />
+        ) : (
+          <UsersManagementLoading />
+        )}
       </Layout>
     </>
   );
