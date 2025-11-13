@@ -1,6 +1,6 @@
 import { Button, Flex, Heading } from "@radix-ui/themes";
 import { Link } from "react-router";
-import { useAuth } from "@workos-inc/authkit-react";
+import { useAuth } from "~/lib/use-auth";
 
 export default function HomePage() {
   const auth = useAuth();
