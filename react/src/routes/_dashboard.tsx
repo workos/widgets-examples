@@ -11,7 +11,7 @@ import {
   Text,
   VisuallyHidden,
 } from "@radix-ui/themes";
-import { useAuth } from "@workos-inc/authkit-react";
+import { useAuth } from "src/lib/use-auth";
 import { Outlet, useNavigation } from "react-router";
 import { PrimaryNav, PrimaryNavItem } from "src/ui/dashboard";
 import { SuperAppMark } from "src/ui/svgs";
