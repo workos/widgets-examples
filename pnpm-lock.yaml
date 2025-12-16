@@ -30,8 +30,8 @@ importers:
         specifier: ^5.90.2
         version: 5.90.2(@tanstack/react-query@5.90.8(react@19.2.0))(react@19.2.0)
       '@workos-inc/authkit-nextjs':
-        specifier: ^2.11.0
-        version: 2.11.0(express@4.21.2)(next@15.5.9(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
+        specifier: ^2.11.1
+        version: 2.11.1(express@4.21.2)(next@15.5.9(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react-dom@19.2.0(react@19.2.0))(react@19.2.0)
       '@workos-inc/node':
         specifier: ^7.73.0
         version: 7.73.0(express@4.21.2)(next@15.5.9(@babel/core@7.28.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
@@ -1782,8 +1782,8 @@ packages:
     resolution: {integrity: sha512-8K61v6nw4Tm4KwLhmYn5yE8m0+TqFvmsv2KomkTY4uwvpqWI5RottYZPMMVAADm8b6soGLU8kvCdgVR/EO3wLg==}
     deprecated: Rollback custom event emitter to prevent token leakage
 
-  '@workos-inc/authkit-nextjs@2.11.0':
-    resolution: {integrity: sha512-lX7haYMj6BtaU30e5kCxpt0nWFVnS6xDMSCqZbtbjXHXnyAwb2/JDthRpRskGUBi5N1cqnD8hUZtN1/MolhUQw==}
+  '@workos-inc/authkit-nextjs@2.11.1':
+    resolution: {integrity: sha512-ygRWMKwcEmc6oK3iKsGG3xpQdA7Phf0LYPFTA/6Z+B78nTApzXiYfahoI+k+qpU08zdcteOd5fqOiol9deH4jg==}
     peerDependencies:
       next: ^13.5.9 || ^14.2.26 || ^15.2.3 || ^16
       react: ^18.0 || ^19.0.0
@@ -4594,7 +4594,7 @@ snapshots:
 
   '@workos-inc/authkit-js@0.15.0': {}
 
-  '@workos-inc/authkit-nextjs@2.11.0(express@4.21.2)(next@15.5.9(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
+  '@workos-inc/authkit-nextjs@2.11.1(express@4.21.2)(next@15.5.9(react-dom@19.2.0(react@19.2.0))(react@19.2.0))(react-dom@19.2.0(react@19.2.0))(react@19.2.0)':
     dependencies:
       '@workos-inc/node': 7.73.0(express@4.21.2)(next@15.5.9(@babel/core@7.28.0)(react-dom@19.2.0(react@19.2.0))(react@19.2.0))
       iron-session: 8.0.4
