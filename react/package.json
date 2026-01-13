@@ -19,8 +19,8 @@
     "@workos-inc/authkit-js": "^0.15.0",
     "@workos-inc/authkit-react": "^0.13.0",
     "@workos-inc/widgets": "^1.5.0",
-    "react": "^19.2.0",
-    "react-dom": "^19.2.0",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "react-error-boundary": "^6.0.0",
     "react-router": "^7.9.5"
   },
