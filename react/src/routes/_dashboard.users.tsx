@@ -1,16 +1,19 @@
-import { UsersManagement } from "@workos-inc/widgets";
-import { Flex, Heading, Separator, Text } from "@radix-ui/themes";
+import { UsersManagement, UsersManagementLoading } from "@workos-inc/widgets";
+import { Button, Flex, Heading, Separator, Text } from "@radix-ui/themes";
 import { Navigate } from "react-router";
-import { useAuth } from "@workos-inc/authkit-react";
+import { useAuth } from "~/lib/use-auth";
 
 export default function Users() {
   const auth = useAuth();
 
   if (auth.isLoading) {
     return (
-      <Flex justify="center" align="center" height="100%">
-        Authenticating...
-      </Flex>
+      <>
+        <title>SuperApp | Users</title>
+        <Layout subtitle="Manage and invite users for the SuperApp team.">
+          <UsersManagementLoading />
+        </Layout>
+      </>
     );
   }
 
@@ -22,20 +25,11 @@ export default function Users() {
     return (
       <>
         <title>SuperApp | No organization</title>
-        <Flex direction="column" align="center" px="9">
-          <Flex direction="column" gap="5" maxWidth="640px" width="100%" my="9">
-            <main>
-              <Heading size="8" mb="2">
-                User does not belong to an organization
-              </Heading>
-              <Text asChild>
-                <button type="button" onClick={() => void auth.signOut()}>
-                  Sign out
-                </button>
-              </Text>
-            </main>
-          </Flex>
-        </Flex>
+        <Layout subtitle="User does not belong to an organization.">
+          <Button type="button" onClick={() => void auth.signOut()}>
+            Sign out
+          </Button>
+        </Layout>
       </>
     );
   }
@@ -43,20 +37,36 @@ export default function Users() {
   return (
     <>
       <title>SuperApp | Users</title>
-      <Flex direction="column" align="center" px="9">
-        <Flex direction="column" gap="5" maxWidth="640px" width="100%" my="9">
-          <header>
-            <Heading size="8" mb="2">
-              Users
-            </Heading>
-            <Text>Manage and invite users for the SuperApp team</Text>
-          </header>
-          <Separator size="4" />
-          <main>
-            <UsersManagement authToken={auth.getAccessToken} />
-          </main>
-        </Flex>
-      </Flex>
+      <Layout subtitle="Manage and invite users for the SuperApp team.">
+        {auth.authToken ? (
+          <UsersManagement authToken={auth.authToken} />
+        ) : (
+          <UsersManagementLoading />
+        )}
+      </Layout>
     </>
+  );
+}
+
+function Layout({
+  children,
+  subtitle,
+}: {
+  children: React.ReactNode;
+  subtitle: string;
+}) {
+  return (
+    <Flex direction="column" align="center" px="9">
+      <Flex direction="column" gap="5" maxWidth="640px" width="100%" my="9">
+        <header>
+          <Heading size="8" mb="2">
+            Users
+          </Heading>
+          <Text>{subtitle}</Text>
+        </header>
+        <Separator size="4" />
+        <main>{children}</main>
+      </Flex>
+    </Flex>
   );
 }

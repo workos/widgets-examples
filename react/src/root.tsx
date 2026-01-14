@@ -1,8 +1,6 @@
 import { Flex, Heading, Link, Text, Theme } from "@radix-ui/themes";
 import { ErrorBoundary as ReactErrorBoundary } from "react-error-boundary";
 import {
-  Links,
-  Meta,
   Outlet,
   Link as RouterLink,
   ScrollRestoration,
@@ -12,7 +10,7 @@ import {
 import * as React from "react";
 import { preconnect } from "react-dom";
 import { getApiProps, getDevtools } from "~/lib/env";
-import { AuthKitProvider } from "@workos-inc/authkit-react";
+import { AuthProvider } from "~/lib/auth-provider";
 import { WorkOsWidgets } from "@workos-inc/widgets";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
@@ -40,13 +38,13 @@ function Providers({ children }: { children: React.ReactNode }) {
         </Theme>
       )}
     >
-      <AuthKitProvider {...getApiProps()}>
+      <AuthProvider {...getApiProps()}>
         <WorkOsWidgets {...getApiProps()}>
           <Theme data-is-root-theme="false" style={{ height: "100%" }}>
             {children}
           </Theme>
         </WorkOsWidgets>
-      </AuthKitProvider>
+      </AuthProvider>
     </ReactErrorBoundary>
   );
 }
