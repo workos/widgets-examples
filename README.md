@@ -1,3 +1,4 @@
+npm install @workos-inc/widgets @radix-ui/themes @tanstack/react-query
 # WorkOS Widgets Examples
 
 This repository contains example applications demonstrating how to integrate WorkOS Widgets into different JavaScript frameworks.
