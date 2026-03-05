@@ -1,0 +1,32 @@
+{
+  "name": "workos-widgets-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Comprehensive examples of all WorkOS Widgets for curious customers",
+  "scripts": {
+    "build": "test -f .env || cp .env.example .env; next build",
+    "dev": "next dev -p 4040",
+    "lint": "next lint",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@radix-ui/react-icons": "^1.3.2",
+    "@radix-ui/themes": "^3.2.1",
+    "@tanstack/react-query": "^5.90.2",
+    "@workos-inc/authkit-nextjs": "^2.11.1",
+    "@workos-inc/node": "^7.73.0",
+    "@workos-inc/widgets": "^1.5.0",
+    "next": "^15.5.9",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3"
+  },
+  "devDependencies": {
+    "@types/node": "^24",
+    "@types/react": "^19.2.4",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}
