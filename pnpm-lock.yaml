@@ -21,8 +21,8 @@ importers:
         specifier: ^1.3.2
         version: 1.3.2(react@19.2.3)
       '@radix-ui/themes':
-        specifier: ^3.2.1
-        version: 3.2.1(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        specifier: ^3.3.0
+        version: 3.3.0(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@tanstack/react-query':
         specifier: ^5.90.2
         version: 5.90.8(react@19.2.3)
@@ -36,8 +36,8 @@ importers:
         specifier: ^7.73.0
         version: 7.73.0(express@4.21.2)(next@15.5.9(@babel/core@7.28.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))
       '@workos-inc/widgets':
-        specifier: ^1.5.0
-        version: 1.5.0(@radix-ui/themes@3.2.1(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(@tanstack/react-query@5.90.8(react@19.2.3))(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        specifier: next
+        version: 1.19.0-next.1790708352913(@radix-ui/themes@3.3.0(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(@tanstack/react-query@5.90.8(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       next:
         specifier: ^15.5.9
         version: 15.5.9(@babel/core@7.28.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
@@ -67,8 +67,8 @@ importers:
         specifier: ^1.3.2
         version: 1.3.2(react@19.2.3)
       '@radix-ui/themes':
-        specifier: ^3.2.1
-        version: 3.2.1(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        specifier: ^3.3.0
+        version: 3.3.0(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@tanstack/react-query':
         specifier: ^5.90.8
         version: 5.90.8(react@19.2.3)
@@ -82,8 +82,8 @@ importers:
         specifier: ^0.13.0
         version: 0.13.0(react@19.2.3)
       '@workos-inc/widgets':
-        specifier: ^1.5.0
-        version: 1.5.0(@radix-ui/themes@3.2.1(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(@tanstack/react-query@5.90.8(react@19.2.3))(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        specifier: next
+        version: 1.19.0-next.1790708352913(@radix-ui/themes@3.3.0(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(@tanstack/react-query@5.90.8(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       react:
         specifier: ^19.2.3
         version: 19.2.3
@@ -128,8 +128,8 @@ importers:
         specifier: ^1.3.2
         version: 1.3.2(react@19.2.3)
       '@radix-ui/themes':
-        specifier: ^3.2.1
-        version: 3.2.1(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        specifier: ^3.3.0
+        version: 3.3.0(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@react-router/node':
         specifier: ^7.9.5
         version: 7.9.5(react-router@7.9.5(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(typescript@5.9.3)
@@ -149,8 +149,8 @@ importers:
         specifier: ^7.73.0
         version: 7.73.0(express@4.21.2)(next@15.5.9(@babel/core@7.28.0)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))
       '@workos-inc/widgets':
-        specifier: ^1.5.0
-        version: 1.5.0(@radix-ui/themes@3.2.1(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(@tanstack/react-query@5.90.8(react@19.2.3))(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+        specifier: next
+        version: 1.19.0-next.1790708352913(@radix-ui/themes@3.3.0(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(@tanstack/react-query@5.90.8(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       isbot:
         specifier: ^5.1.32
         version: 5.1.32
@@ -551,6 +551,11 @@ packages:
 
   '@floating-ui/utils@0.2.10':
     resolution: {integrity: sha512-aGTxbpbg8/b5JfU1HXSrbH3wXZuLPJcNEcZQFMxLs3oSzgtVu6nFPkbbGGUvBcUjKV2YyB9Wxxabo+HEH9tcRQ==}
+
+  '@graphql-typed-document-node/core@3.2.0':
+    resolution: {integrity: sha512-mB9oAsNCm9aM3/SOv4YtBMqZbYj10R7dkq8byBqxGY/ncFwhf2oQzMV+LCRlWoDSEBJ3COiR1yeDvMtsoOsuFQ==}
+    peerDependencies:
+      graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
 
   '@img/colour@1.0.0':
     resolution: {integrity: sha512-A5P/LfWGFSl6nsckYtjw9da+19jB8hkJ6ACTGcDfEJ0aE+l2n2El7dsVM7UVHZQ9s2lmYMWlrS21YLy2IR1LUw==}
@@ -1491,8 +1496,8 @@ packages:
   '@radix-ui/rect@1.1.1':
     resolution: {integrity: sha512-HPwpGIzkl28mWyZqG52jiqDJ12waP11Pa1lGoiyUkIEuMLBP0oeK/C89esbXrxsky5we7dfd8U58nm0SgAWpVw==}
 
-  '@radix-ui/themes@3.2.1':
-    resolution: {integrity: sha512-WJL2YKAGItkunwm3O4cLTFKCGJTfAfF6Hmq7f5bCo1ggqC9qJQ/wfg/25AAN72aoEM1yqXZQ+pslsw48AFR0Xg==}
+  '@radix-ui/themes@3.3.0':
+    resolution: {integrity: sha512-I0/h2CRNTpYNB7Mi3xFIvSsQq5a108d7kK8dTO5zp5b9HR5QJXKag6B8tjpz2ITkVYkFdkGk45doNkSr7OxwNw==}
     peerDependencies:
       '@types/react': '*'
       '@types/react-dom': '*'
@@ -1806,13 +1811,17 @@ packages:
     resolution: {integrity: sha512-67qU0/GqZmkyxIiA9WI18umIo9w/nC0PNdvQkqKuXInk6y5oiznSrvkDnQjUjs9OBoZcH8O/96VLZHYaXZWkfQ==}
     engines: {node: '>=16'}
 
-  '@workos-inc/widgets@1.5.0':
-    resolution: {integrity: sha512-f/OASawBuCgX4puSRANYLCXnExczip7gjd5rlgqp5n1AnMltXrin/iE7dpoVh7PQXJHJpDIIOrIp/i3kFdInAw==}
+  '@workos-inc/widgets@1.19.0-next.1790708352913':
+    resolution: {integrity: sha512-wxaqH3OHWPQULr90QQxSgaawq4mFTZi/8a9rLHDNatmbrpcPvwdTaFvEboVXuFeYhkBxIL93qVgyl1jMdWb3jQ==}
     peerDependencies:
-      '@radix-ui/themes': ^3.1.0
+      '@radix-ui/themes': ^3.3.0
       '@tanstack/react-query': ^5.0.0
       react: '>=18'
       react-dom: '>=18'
+      swr: ^2.0.0
+    peerDependenciesMeta:
+      swr:
+        optional: true
 
   accepts@1.3.8:
     resolution: {integrity: sha512-PYAthTa2m2VKxuvSD3DPC/Gy+U+sOA1LAuT8mkmRuvw+NACSaeXEQ+NHcVF7rONl6qcaxV3Uuemwawk+7+SJLw==}
@@ -1876,8 +1885,8 @@ packages:
     resolution: {integrity: sha512-7rAxByjUMqQ3/bHJy7D6OGXvx/MMc4IqBn/X0fcM1QUcAItpZrBEYhWGem+tzXH90c+G01ypMcYJBO9Y30203g==}
     engines: {node: '>= 0.8', npm: 1.2.8000 || >= 1.4.16}
 
-  bowser@2.12.1:
-    resolution: {integrity: sha512-z4rE2Gxh7tvshQ4hluIT7XcFrgLIQaw9X3A+kTTRdovCz5PMukm/0QC/BKSYPj3omF5Qfypn9O/c5kgpmvYUCw==}
+  bowser@2.14.0:
+    resolution: {integrity: sha512-P8J1R788N3SUX80KWjr6CKO8RMlbZR4tVqN6A0sMamSK5PCIlfW5LrBGzMB8hKYAdzhX28M8MDgbNJMsBN74sA==}
 
   brace-expansion@2.0.2:
     resolution: {integrity: sha512-Jt0vHyM+jmUBqojB7E1NIYadt0vI0Qxjxd2TErW94wDz+E2LAm5vKMXXwg6ZZBTHPuUlDgQHKXvjGBdfcF1ZDQ==}
@@ -2175,6 +2184,15 @@ packages:
   gopd@1.2.0:
     resolution: {integrity: sha512-ZUKRh6/kUFoAiTAtTYPZJ3hw9wNxx+BIBOijnlG9PnrJsCcSjs1wyyD6vJpaYtgnzDrKYRSqf3OO6Rfa93xsRg==}
     engines: {node: '>= 0.4'}
+
+  graphql-request@7.1.2:
+    resolution: {integrity: sha512-+XE3iuC55C2di5ZUrB4pjgwe+nIQBuXVIK9J98wrVwojzDW3GMdSBZfxUk8l4j9TieIpjpggclxhNEU9ebGF8w==}
+    peerDependencies:
+      graphql: 14 - 16
+
+  graphql@16.11.0:
+    resolution: {integrity: sha512-mS1lbMsxgQj6hge1XZ6p7GPhbrtFwUFYi3wRzXAC/FmYnyXMTvvI3td3rjmQ2u8ewXueaSvRPWaEcgVVOT9Jnw==}
+    engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
 
   has-symbols@1.1.0:
     resolution: {integrity: sha512-1cDNdwJ2Jaohmb3sg4OmKaMBwuC48sYni5HUw2DvsC8LjGTLK9h+eb1X6RyuOHe4hT0ULCW68iomhjUoKUqlPQ==}
@@ -2808,12 +2826,6 @@ packages:
       '@types/react':
         optional: true
 
-  use-debounce@10.0.5:
-    resolution: {integrity: sha512-Q76E3lnIV+4YT9AHcrHEHYmAd9LKwUAbPXDm7FlqVGDHiSOhX3RDjT8dm0AxbJup6WgOb1YEcKyCr11kBJR5KQ==}
-    engines: {node: '>= 16.0.0'}
-    peerDependencies:
-      react: '*'
-
   use-sidecar@1.1.3:
     resolution: {integrity: sha512-Fedw0aZvkhynoPYlA5WXrMCAMm+nSWdZt6lzJQ7Ok8S6Q+VsHmHpRWndVRJ8Be0ZbkfPc5LRYH+5XrzXcEeLRQ==}
     engines: {node: '>=10'}
@@ -3314,6 +3326,10 @@ snapshots:
       react-dom: 19.2.3(react@19.2.3)
 
   '@floating-ui/utils@0.2.10': {}
+
+  '@graphql-typed-document-node/core@3.2.0(graphql@16.11.0)':
+    dependencies:
+      graphql: 16.11.0
 
   '@img/colour@1.0.0':
     optional: true
@@ -4274,7 +4290,7 @@ snapshots:
 
   '@radix-ui/rect@1.1.1': {}
 
-  '@radix-ui/themes@3.2.1(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@radix-ui/themes@3.3.0(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
       '@radix-ui/colors': 3.0.0
       classnames: 2.5.1
@@ -4636,23 +4652,17 @@ snapshots:
       - koa
       - next
 
-  '@workos-inc/widgets@1.5.0(@radix-ui/themes@3.2.1(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(@tanstack/react-query@5.90.8(react@19.2.3))(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
+  '@workos-inc/widgets@1.19.0-next.1790708352913(@radix-ui/themes@3.3.0(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3))(@tanstack/react-query@5.90.8(react@19.2.3))(react-dom@19.2.3(react@19.2.3))(react@19.2.3)':
     dependencies:
-      '@radix-ui/react-compose-refs': 1.1.2(@types/react@19.2.4)(react@19.2.3)
-      '@radix-ui/react-form': 0.1.7(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@radix-ui/react-icons': 1.3.2(react@19.2.3)
-      '@radix-ui/react-popover': 1.1.14(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
-      '@radix-ui/react-use-controllable-state': 1.2.2(@types/react@19.2.4)(react@19.2.3)
-      '@radix-ui/themes': 3.2.1(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
+      '@radix-ui/themes': 3.3.0(@types/react-dom@19.2.3(@types/react@19.2.4))(@types/react@19.2.4)(react-dom@19.2.3(react@19.2.3))(react@19.2.3)
       '@tanstack/react-query': 5.90.8(react@19.2.3)
-      bowser: 2.12.1
+      bowser: 2.14.0
       clsx: 2.1.1
+      graphql: 16.11.0
+      graphql-request: 7.1.2(graphql@16.11.0)
       react: 19.2.3
       react-dom: 19.2.3(react@19.2.3)
-      use-debounce: 10.0.5(react@19.2.3)
-    transitivePeerDependencies:
-      - '@types/react'
-      - '@types/react-dom'
 
   accepts@1.3.8:
     dependencies:
@@ -4729,7 +4739,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  bowser@2.12.1: {}
+  bowser@2.14.0: {}
 
   brace-expansion@2.0.2:
     dependencies:
@@ -5036,6 +5046,13 @@ snapshots:
   globrex@0.1.2: {}
 
   gopd@1.2.0: {}
+
+  graphql-request@7.1.2(graphql@16.11.0):
+    dependencies:
+      '@graphql-typed-document-node/core': 3.2.0(graphql@16.11.0)
+      graphql: 16.11.0
+
+  graphql@16.11.0: {}
 
   has-symbols@1.1.0: {}
 
@@ -5698,10 +5715,6 @@ snapshots:
       tslib: 2.8.1
     optionalDependencies:
       '@types/react': 19.2.4
-
-  use-debounce@10.0.5(react@19.2.3):
-    dependencies:
-      react: 19.2.3
 
   use-sidecar@1.1.3(@types/react@19.2.4)(react@19.2.3):
     dependencies:

@@ -12,11 +12,13 @@ import {
   VisuallyHidden,
 } from "@radix-ui/themes";
 import { useAuth } from "@workos-inc/authkit-react";
+import { OrganizationSwitcher } from "@workos-inc/widgets";
 import { Outlet, useNavigation } from "react-router";
 import { PrimaryNav, PrimaryNavItem } from "src/ui/dashboard";
 import { SuperAppMark } from "src/ui/svgs";
 
 export default function DashboardLayout() {
+  const { getAccessToken, switchToOrganization } = useAuth();
   const navigation = useNavigation();
   const isSigningOut =
     navigation.state === "submitting" && navigation.formAction === "/signout";
@@ -63,11 +65,16 @@ export default function DashboardLayout() {
             </IconButton>
           </Flex>
           <Separator size="4" />
-
           <PrimaryNav>
             <PrimaryNavItem to="/dashboard">Dashboard</PrimaryNavItem>
             <PrimaryNavItem to="/users">Users</PrimaryNavItem>
           </PrimaryNav>
+          <Separator size="4" />
+          <OrganizationSwitcher
+            authToken={getAccessToken}
+            organizationLabel="My Teams"
+            switchToOrganization={switchToOrganization}
+          />
         </Flex>
       </Box>
       <Box
